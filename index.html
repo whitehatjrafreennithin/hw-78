@@ -1,0 +1,59 @@
+<html>
+  
+<head> <title> "Family photo book" </title> </head>
+
+  <body>
+
+    <p id="reason"> Family photo book  </p>
+     <p id="2 reason"> 2 photos of my family </p>
+    
+    <div>
+    <br>
+      <button type="button" id="btn1" onclick="nextslide()"> Next </button>   
+    
+    </div>     <br>
+    
+    <img id="image1" src="preview+image (1).jpg">
+    
+    <p id="one"> Family Photo Book </p>
+    
+    <script>
+
+var images = ["image0.jpeg","image1.jpeg"];
+var reasons=
+    ["Nithin,Bhupalan, and Srividya", "Nithin",];
+
+ 
+ 
+   
+   
+     var i=0;
+function nextslide() {
+if(i == 3)
+     {
+       i=0;
+     }
+
+{ document.getElementById("one").innerHTML= reasons[i];
+  document.getElementById("image1").src= images[i];
+  
+ i++;
+}
+ 
+}
+
+
+
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+
+</html>
